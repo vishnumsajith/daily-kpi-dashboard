@@ -1,13 +1,263 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>Daily KPI Dashboard</title>
+
+<style>
+
+body{
+    font-family: Arial,sans-serif;
+    background:#f4f6f8;
+    margin:20px;
+}
+
+h1{
+    text-align:center;
+}
+
+.filters{
+    margin-bottom:20px;
+}
+
+select{
+    padding:6px;
+    margin-right:10px;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    margin-bottom:30px;
+}
+
+.card{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    background:#2f75ff;
+    color:white;
+    font-weight:bold;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#2f75ff;
+    color:white;
+    padding:8px;
+    border:1px solid #ddd;
+}
+
+td{
+    padding:8px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+.total-row{
+    background:#e8eefc;
+    font-weight:bold;
+}
+
+</style>
 </head>
+
 <body>
 
-<h1>Daily KPI Dashboard</h1>
+<h1>DAILY KPI DASHBOARD</h1>
 
-<p>Dashboard is under development.</p>
+<div class="filters">
+
+<label>Date</label>
+<select>
+<option>All Dates</option>
+</select>
+
+<label>TL Name</label>
+<select>
+<option>All TLs</option>
+</select>
+
+<label>Agent Name</label>
+<select>
+<option>All Agents</option>
+</select>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<div>Total Calls</div>
+<div id="calls">0</div>
+</div>
+
+<div class="card">
+<div>Total Emails</div>
+<div id="emails">0</div>
+</div>
+
+<div class="card">
+<div>Total Chats</div>
+<div id="chats">0</div>
+</div>
+
+<div class="card">
+<div>Total Disputes</div>
+<div id="disputes">0</div>
+</div>
+
+<div class="card">
+<div>Total Reviews</div>
+<div id="reviews">0</div>
+</div>
+
+</div>
+
+<h2>Team KPI Table</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Agent Name</th>
+
+<th>No of Calls Handled</th>
+
+<th>No of Emails Handled</th>
+
+<th>No of Chats Handled</th>
+
+<th>Chats KPI</th>
+
+<th>Total No of Reviews Handled</th>
+
+<th>Handled Reviews KPI</th>
+
+<th>Total No of Disputes Handled</th>
+
+<th>Handled Disputes KPI</th>
+
+<th>Total No of Call Audits Done</th>
+
+<th>Call Audit KPI</th>
+
+<th>Total No of Email Audits Done</th>
+
+<th>Email Audit KPI</th>
+
+<th>Escalation/Floor Assistance Handled</th>
+
+<th>Escalation/Floor Assistance KPI</th>
+
+<th>Ad Hoc Hours</th>
+
+<th>Ad Hoc Value</th>
+
+<th>Total KPI Achieved</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Sample Agent</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td>0</td>
+
+</tr>
+
+<tr class="total-row">
+
+<td>Total Team KPI</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+<td>0</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 </body>
 </html>
